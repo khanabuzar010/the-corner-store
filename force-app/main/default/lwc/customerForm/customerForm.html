@@ -1,0 +1,24 @@
+<template>
+    <lightning-record-edit-form object-api-name={accountObject} onsubmit ={handleSubmit} onsuccess={handleSuccess}>
+        <lightning-card style="background-color: white;">
+            <div class="slds-grid slds-align_absolute-left" >
+                <div class="slds-col slds-size_1-of-2 ">
+                    <lightning-input-field field-name={name}></lightning-input-field>
+                    <lightning-input-field field-name={phone}></lightning-input-field>
+                    <lightning-input-field field-name={emailId}></lightning-input-field>
+                    <!-- <lightning-input-field field-name={location}></lightning-input-field> -->
+                    <lightning-input-field field-name={postalCode}></lightning-input-field>
+                    <lightning-input-field field-name={pickupAddress}></lightning-input-field>
+                    <lightning-input-field field-name={deliveryAddress}></lightning-input-field>
+                    <lightning-input-field field-name={completeAddress}></lightning-input-field>
+                </div>
+            </div>
+                <!-- <div class="slds-grid slds-align_absolute-left" > -->
+                    <lightning-button class="slds-m-top_small"
+                        type="submit" variant="success"
+                        label="Create Customer" onclick={showToast} >
+                    </lightning-button>
+                <!-- </div> -->
+        </lightning-card>
+    </lightning-record-edit-form>
+</template>
